@@ -1,0 +1,39 @@
+@import "../scss/style.scss";
+
+.q-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    height: 32px;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    transition: .1s;
+    user-select: none;
+    vertical-align: middle;
+    padding: 8px 15px;
+    border: 1px solid var(--q-button-border-color);
+    font-size: var(--q-font-size-base);
+
+    &:hover {
+        color: var(--q-button-hover-text-color);
+        border-color: var(--q-button-hover-border-color);
+        background-color: var(--q-button-hover-bg-color);
+        outline: none;
+    }
+
+    &.q-button-primary {
+        background-color: var(--q-color-primary-light-1);
+        color: #fff;
+
+        &:hover {
+            color: var(--q-button-hover-text-color);
+            border-color: var(--q-button-hover-border-color);
+            background-color: var(--q-button-hover-bg-color);
+        }
+    }
+}

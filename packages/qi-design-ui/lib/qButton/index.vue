@@ -11,6 +11,10 @@ export default defineComponent({
         type:{
             type:String,
             default:"default" // default primary
+        },
+        size:{
+            type:String,
+            default:"samll"
         }
     }
 })
